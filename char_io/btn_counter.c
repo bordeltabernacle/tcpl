@@ -10,7 +10,6 @@ int main()
 	t = 0;
 	b = 0;
 
-	nl = 0;
 	while ((c = getchar()) != EOF) {
 		if (c == '\n')
 			++nl;
@@ -18,7 +17,6 @@ int main()
 			++t;
 		if (c == ' ')
 			++b;
-
 	}
 	printf("Newlines: %d\n", nl);
 	printf("Tabs: %d\n", t);
