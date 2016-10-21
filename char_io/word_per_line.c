@@ -11,12 +11,13 @@ int main()
 
 	state = OUT;
 	while ((c = getchar()) != EOF) {
-		putchar(c);
-		if (c == ' ' || c == '\n' || c == '\t') {
-			printf("\n");
+		if ((c == ' ' || c == '\n' || c == '\t') && state == IN) {
+			putchar('\n');
 			state = OUT;
 		} else if (state == OUT) {
 			state = IN;
-		}
+			putchar(c);
+		} else
+			putchar(c);
 	}
 }
