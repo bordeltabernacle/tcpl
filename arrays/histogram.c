@@ -17,10 +17,8 @@ int main()
 			++len;
 		}
 	}
-	printf("\nword lengths");
-	printf("\n------------\n");
-	for (i = 0; i < 10; ++i) {
-		printf("%d\t|", i + 1);
+	for (i = 1; i < 10; ++i) {
+		printf("  %d (%d) |", i, ndigit[i]);
 		while (ndigit[i] > 0) {
 			putchar('*');
 			--ndigit[i];
