@@ -1,4 +1,4 @@
-./horiz_histogram_answer.out << EOF
+./vert_histogram_answer.out << EOF
 a
 do
 hello
