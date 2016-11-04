@@ -2,23 +2,23 @@
 #define MAXLINE 1000		/* maximum input line size */
 
 int fetchline(char line[], int maxline);
-int remove(char s[]);
+int rm(char s[]);
 
-/* remove trailing blanks and tabs, and delete blank lines */
+/* rm trailing blanks and tabs, and delete blank lines */
 int main()
 {
 	char line[MAXLINE];	/* current input line */
 
 	while (fetchline(line, MAXLINE) > 0) {
-		if (remove(line) > 0) {
-			printf("\n", line);
+		if (rm(line) > 0) {
+			printf("%s\n", line);
 		}
 	}
 	return 0;
 }
 
-/* remove trailing blanks and tans from character string s */
-int remove(char s[])
+/* rm trailing blanks and tans from character string s */
+int rm(char s[])
 {
 	int i;
 
