@@ -10,7 +10,6 @@
 int main()
 {
 	int c, i, j, nc, state;
-	int len;		/* length of each bar */
 	int maxvalue;		/* maximum value for wl[] */
 	int ovflow;		/* number of overflow words */
 	int wl[MAXWORD];	/* word length counters */
