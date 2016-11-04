@@ -1,4 +1,4 @@
-./longer_than_eighty.out << EOF
+./longerline.out << EOF
 one
 three
 longer
