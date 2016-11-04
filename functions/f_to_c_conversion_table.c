@@ -7,7 +7,7 @@
 /* print Fahrenheit-Celsius table
    for fahr = 0, 20, ..., 300 */
 
-double convert(int fahr);
+float convert(float fahr);
 
 int main()
 {
@@ -23,7 +23,7 @@ int main()
 }
 
 /* conversion: convert Fahrenheit to Celsius */
-double convert(int fahr)
+float convert(float fahr)
 {
 	return (5.0 / 9.0) * (fahr - 32);
 }
